@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Priyank Lohariwal">
     <title>Priyank Lohariwal</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
 </head>
 
 <style>
@@ -14,6 +18,7 @@
 
     .outer-container {
         display: table;
+        z-index: 100;
     }
     .container {
         display: table-cell;
@@ -23,25 +28,26 @@
     }
 
     img {
-        border: #282f40;
+        border: #afafaf;
         border-width: 10px;
-        border-style: double ridge;
+        border-style: ridge;
         border-radius: 50%;
         max-width: 40%;
         max-height: 40%;
         
     }
-    h2 {
+    h2,hr {
         font-family:'Courier New', Courier, monospace;
         font-variant:normal;
         font-style: italic;
-        font-weight: 100;
-        color: #d4d4d4;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+        font-weight: 300;
+        color: #000000;
+        text-shadow: 0 2px 2px rgb(255, 255, 255, 0.5);
         object-fit: cover;
     }
     body {
-        background-color: #1c1d21;
+        background-image: url('./img/cover3.jpg');
+        background-size: cover;
         padding: 0;
         margin: 0;
         max-height: 100%;
