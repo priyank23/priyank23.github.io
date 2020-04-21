@@ -7,7 +7,50 @@
     <title>Priyank Lohariwal</title>
 </head>
 
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    img {
+        border: #282f40;
+        border-width: 15px;
+        border-style: double ridge;
+        margin-top: 10%;
+        border-radius: 50%;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    h1 {
+        font-family:'Courier New', Courier, monospace;
+        font-variant:normal;
+        font-style: italic;
+        font-weight: 100;
+        color: #d4d4d4;
+    }
+    body {
+        background-color: #1c1d21;
+        
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="JavaScript">
+    function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+    });
+</script>
+
 <body>
-    Priyank Lohariwal
+    <img src="img/my-img.jpg">
+    <h1>Priyank Lohariwal</h1>
 </body>
 </html>
