@@ -12,15 +12,15 @@
 </head>
 
 <style>
-    @media (min-height: 100vh) {
-        html {
-            background-image: url('./img/cover3.jpg');
-            background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            scroll-behavior: smooth;
-        }
+    html {
+        background-image: url('./img/cover3.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        scroll-behavior: smooth;
+        height: 100%;
+        overflow: hidden;
     }
 
     .outer-container {
@@ -59,7 +59,6 @@
         box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5);
     }
     body {
-        
         padding: 0;
         margin: 0;
         max-height: 100%;
@@ -71,12 +70,13 @@
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="JavaScript">
-    function set_body_height() { // set body height = window height
+    function set_height() { // set body height = window height
         $('body').height($(window).height());
+        $('html').height($(window).height())
     }
     $(document).ready(function() {
-        $(window).bind('resize', set_body_height);
-        set_body_height();
+        $(window).bind('resize', set_height);
+        set_height();
     });
 </script>
 
