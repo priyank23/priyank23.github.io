@@ -12,14 +12,15 @@
 </head>
 
 <style>
-    html {
-        background-image: url('./img/cover3.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        scroll-behavior: smooth;
-        background: min-height 100%;
+    @media (min-height: 100vh) {
+        html {
+            background-image: url('./img/cover3.jpg');
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            scroll-behavior: smooth;
+        }
     }
 
     .outer-container {
