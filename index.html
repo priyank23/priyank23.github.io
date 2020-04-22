@@ -13,7 +13,13 @@
 
 <style>
     html {
+        background-image: url('./img/cover3.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         scroll-behavior: smooth;
+        background: min-height 100%;
     }
 
     .outer-container {
@@ -36,7 +42,7 @@
         max-height: 40%;
         
     }
-    h2,hr {
+    h2 {
         font-family:'Courier New', Courier, monospace;
         font-variant:normal;
         font-style: italic;
@@ -45,9 +51,14 @@
         text-shadow: 0 2px 2px rgb(255, 255, 255, 0.5);
         object-fit: cover;
     }
+    hr {
+        border: none;
+        height:2px;
+        background-color: #000000;
+        box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5);
+    }
     body {
-        background-image: url('./img/cover3.jpg');
-        background-size: cover;
+        
         padding: 0;
         margin: 0;
         max-height: 100%;
