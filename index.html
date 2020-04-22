@@ -9,64 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
     <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
 </head>
-
-<style>
-    html {
-        background-image: url('./img/cover3.jpg');
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        scroll-behavior: smooth;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .outer-container {
-        display: table;
-        z-index: 100;
-    }
-    .container {
-        display: table-cell;
-        position: relative;
-        vertical-align: middle;
-        padding: 100px 20%;
-    }
-
-    img {
-        border: #afafaf;
-        border-width: 10px;
-        border-style: ridge;
-        border-radius: 50%;
-        max-width: 40%;
-        max-height: 40%;
-        
-    }
-    h2 {
-        font-family:'Courier New', Courier, monospace;
-        font-variant:normal;
-        font-style: italic;
-        font-weight: 300;
-        color: #000000;
-        text-shadow: 0 2px 2px rgb(255, 255, 255, 0.5);
-        object-fit: cover;
-    }
-    hr {
-        border: none;
-        height:2px;
-        background-color: #000000;
-        box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5);
-    }
-    body {
-        padding: 0;
-        margin: 0;
-        max-height: 100%;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-</style>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="JavaScript">
@@ -78,14 +22,24 @@
         $(window).bind('resize', set_height);
         set_height();
     });
+
 </script>
 
-<body>
+<body class="js-loading">
     <div class="outer-container">
         <div class="container">
             <img src="img/my-img.jpg">
             <h2>Priyank Lohariwal</h2>
+            <h4>Software Enthusiast</h4>
             <hr>
+            <div class="btn-containers">
+                <button><span>About </span></button>
+                <button><span>Blogs </span></button>
+            </div>
+            <div class="btn-containers">
+                <button><span>Contact </span></button>
+                <button><span>CV </span></button>
+            </div>
         </div>
     </div>
 </body>
