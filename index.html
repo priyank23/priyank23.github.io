@@ -16,7 +16,6 @@
 <script type="text/javascript" language="JavaScript">
     function set_height() { // set body height = window height
         $('body').height($(window).height());
-        $('html').height($(window).height());
     }
     $(document).ready(function() {
         $(window).bind('resize', set_height);
@@ -25,20 +24,20 @@
 
 </script>
 
-<body class="js-loading">
+<body>
     <div class="outer-container">
         <div class="container">
-            <img src="img/my-img.jpg">
+            <img id="profile" src="img/my-img.jpg"><br>
             <h2>Priyank Lohariwal</h2>
             <h4>Software Enthusiast</h4>
             <hr>
             <div class="btn-containers">
-                <button><span>About </span></button>
-                <button><span>Blogs </span></button>
+                <a>About</a>
+                <a>Blogs</a>
             </div>
             <div class="btn-containers">
-                <button><span>Contact </span></button>
-                <button><span>CV </span></button>
+                <a>Contact</a>
+                <a>CV</a>
             </div>
         </div>
     </div>
