@@ -76,12 +76,27 @@ hr {
     background-color: #9b9b9b;
     /* box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5); */
 }
+
+@media only screen and (max-width: 639px) {
+    body {
+        background-image: url('./img/cover7-small.jpg');
+    }
+}
+
+@media only screen and (max-width: 1919px) {
+    body {
+        background-image: url('./img/cover7-medium.jpg');
+    }
+}
+
 body {
     background-image: url('./img/cover7.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     padding: 0;
     margin: 0;
     max-height: 100%;
