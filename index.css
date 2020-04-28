@@ -17,17 +17,23 @@ html {
     overflow: hidden;
 }
 
-.outer-container {
-    display: table;
-    z-index: 100;
-    animation-delay: 1s;
-    vertical-align: middle;
-    animation: transitionIn 2s;
+.aboutMe {
+    width:0;
+    height:0;
+    transition: all ease 2s;
+    transition-delay: 1s;
 }
+
 .container {
-    display: table-cell;
+    display: auto;
     position: relative;
-    padding: 80px 21%;
+    vertical-align: middle;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    transition: all ease 2s;
+    width: 500px;
+    animation-delay: 1s;
+    animation: transitionIn 2s;
 }
 
 #profile{
@@ -35,20 +41,20 @@ html {
     border-width: 2px;
     border-style: solid;
     border-radius: 50%;
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 125px;
+    max-height: 125px;
 
 }
 h2 {
     font-size: xx-large;
     letter-spacing: 3px;
-    font-family: 'Bookman', 'URW Bookman L', serif;
-    font-variant: normal;
-    font-style: italic;
-    font-weight: 1000;
-    color: #009968;
-    -webkit-text-stroke-width: 0.5px; 
-    -webkit-text-stroke-color: #ffff;
+    font-family: 'Anonymous Pro',"Lucida Console", Monaco, monospace;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    border: 0px;
+    margin: 0px;
     text-shadow: 0 1px 1px rgb(1,2,3, 0.5);
     object-fit: cover;
 }
@@ -58,20 +64,20 @@ h4 {
     font-variant:normal;
     font-style: italic;
     font-weight: 300;
-    color: #009968;
-    /* -webkit-text-stroke-width: 0.1px; 
-    -webkit-text-stroke-color: #ffff; */
+    color: #9b9b9b;
+    border: 0px;
+    margin: 10px;
     text-shadow: 0 2px 2px rgb(1, 2, 3, 0.5);
     object-fit: cover;
 }
 hr {
     border: none;
     height:1px;
-    background-color: #000000;
-    box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5);
+    background-color: #9b9b9b;
+    /* box-shadow: 0 1px 1px rgb(255, 255, 255, 0.5); */
 }
 body {
-    background-image: url('./img/cover5.jpg');
+    background-image: url('./img/cover7.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -95,16 +101,14 @@ a {
     font-variant:normal;
     font-style: italic;
     font-weight:bolder;
-    color: #009968;
-    border: 3px solid #009968;
-    /* -webkit-text-stroke-width: 0.3px; 
-    -webkit-text-stroke-color: #000000; */
+    color: #7ad6b9;
+    border: 3px solid #7ad6b9;
     width: 100px;
     z-index:20;
     transition: all 0.5s;
     overflow: hidden;
     position: relative;
-    background: #111111;
+    background: transparent;
     cursor: pointer;
 }
 
@@ -114,7 +118,7 @@ a:before, a:after {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #009968;
+    background: #7ad6b9;
     top: -100%;
     left: 0;
     z-index: -1;
@@ -128,56 +132,9 @@ a:after{
     transition-delay: 0.2s;
 }
 a:hover {
-    color: #fff;
+    color: rgb(27, 27, 27);
 }
 
 a:hover::before, a:hover::after {
     top:0;
 }
-
-/* .btn-containers{
-    font-weight: bolder;
-}
-
-.btn-containers>button {
-    padding-left: 12px;
-    margin: 0 10%;
-    display: inline-block;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    font-family:'Courier New', Courier, monospace;
-    font-variant:normal;
-    font-style: italic;
-    font-weight: 700;
-    color: #ffff;
-    -webkit-text-stroke-width: 0.3px; 
-    -webkit-text-stroke-color: #000000;
-    width: 25%;
-    z-index:20;
-    transition: all 0.5s;
-    background: #363755d2;
-}
-
-.btn-containers>button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.btn-containers>button span:after {
-    content: '\00bb';
-    position: relative;
-    opacity: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.btn-containers>button:hover span {
-    padding-right: 3px;
-    padding-left: 0;
-}
-.btn-containers>button:hover span:after {
-    opacity: 1;
-    right:0;
-} */
