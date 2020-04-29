@@ -12,23 +12,29 @@
     <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <script src="https://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="./pageLoad.js"></script>
 <body>
-    <div class="container">
-        <img id="profile" src="img/my-img.jpg"><br>
-        <h2>Priyank Lohariwal</h2>
-        <h4>Stupid | Messy | Student</h4>
-        <hr>
-        <div class="btn-containers">
-            <a id="about">ABOUT</a>
-            <a id="blog">BLOGS</a>
-        </div>
-        <div class="btn-containers">
-            <a id="Contact">CONTACT</a>
-            <a id="cv">CV</a>
+    <div class= "outer-container" id="#home">
+        <div class="container">
+            <img id="profile" src="img/my-img.jpg"><br>
+            <h2>Priyank Lohariwal</h2>
+            <h4>Stupid | Messy | Student</h4>
+            <hr>
+            <div class="btn-containers">
+                <a id="about" href="#aboutPage">ABOUT</a>
+                <a id="blog" href="#BlogPage">BLOGS</a>
+            </div>
+            <div class="btn-containers">
+                <a id="Contact" href="#ContactPage">CONTACT</a>
+                <a id="cv" href="#CVPage">CV</a>
+            </div>
         </div>
     </div>
+    <div class="outer-container" id="aboutPage"><script>getAboutPage()</script></div>
+    <div class="outer-container" id="BlogPage"><script>getBlogPage()</script></div>
+    <div class="outer-container" id="ContactPage">contact page</div>
+    <div class="outer-container" id="CVPage">CV Page</div>    
 </body>
 <script type="text/javascript" src="./index.js"></script>
 </html>
