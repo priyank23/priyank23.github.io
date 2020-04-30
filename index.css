@@ -23,8 +23,8 @@ html {
     width: 100%;
     height: 100%;
     color: #fff;
+    transition: all 2s;
 }
-
 .container {
     display: auto;
     position: relative;
