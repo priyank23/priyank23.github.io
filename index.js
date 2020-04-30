@@ -10,6 +10,7 @@ function set_height_width() {
         elmnt.style.marginRight = "10%";
     }
     else { 
+        elmnt.style.width = "500px";
         elmnt.style.marginLeft = leftMargin.toString(10)+"px" ;
         elmnt.style.marginRight = RightMargin.toString(10)+"px" ;
     }
@@ -17,10 +18,12 @@ function set_height_width() {
     var topPadding = ($(window).height() - 316)/2;
 
     if(topPadding >0) {
+        elmnt.style.height = "316px";
         elmnt.style.paddingTop = topPadding.toString(10)+"px";
         elmnt.style.paddingBottom = topPadding.toString(10)+"px";
     }
     else {
+        elmnt.style.height = "auto";
         elmnt.style.paddingTop = "20%";
     }
     $('body').height($(window).height());

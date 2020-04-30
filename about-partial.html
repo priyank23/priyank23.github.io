@@ -1,14 +1,31 @@
-<link href='https://fonts.googleapis.com/css?family=Euphoria Script|Brawler' rel='stylesheet'>
 <style>
 
+@keyframes transitionLeft {
+    from {
+        padding: 0 5% 0 40%;
+    }
+    to {
+        padding: 0 40% 0 5%;
+    }
+}
+
+@keyframes transitionRight {
+    from {
+        padding: 0 40% 0 5%;
+    }
+    to {
+        padding: 0 5% 0 40%;
+    }
+}
 .container2 {
     background: #222222;
     margin:0;
     padding:0;
     border: 0;
     top:0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -40,7 +57,7 @@
 
     padding: 0 .5em;
     line-height: 1.5em;
-    color: #818078;
+    color: #9b9b9b;
     background: #222222;
 }
 
@@ -49,16 +66,26 @@
     font-family: 'Brawler';
 }
 
-#left {
+.left {
+    float:left; 
+    display: none;
+    text-align: left;
+    padding:0 40% 0 5%;
+    visibility: hidden;
+}
+
+#left-main {
     float:left; 
     text-align: left;
     padding:0 40% 0 5%;
 }
 
-#right {
+.right {
     float: right;
+    display: none;
     text-align: right;
     padding: 0 5% 0 40%;
+    visibility: hidden;
 }
 
 .about-wrapper {
@@ -87,16 +114,20 @@
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #555;
 }
+
+a:any-link {
+    color: #9b9b9b;
+}
 </style>
 
 <div class="container2">
     <h1 style="font-family: 'Euphoria Script';margin:0;"><hr class ="hr-text" data-content="About Me"></h1>
     <div class="about-wrapper">
-        <p id="left">Hey there! This is Priyank Lohariwal. I am just another 20 years old boy who loves to code. You want to know my story? Click here.</p>
-        <p id="right">The idea of pursuing computer science brewed in my mind when I was 6-yr old. A 10 year old boy who started dreaming of going into a field where he could use the magnificent powers of computers.</p>
-        <p id="left">Got into high school taking science as the main subject having love of physics and maths. But the idea of utlizing computer power didn't just fade away. It made me opt computer science as an optional course.</p>
-        <p id="right">Got into Jadavpur University with Computer Science as majors. And hence began my exploration of the tech world. I started learning new languages and exploring different algorithms as I began my journey.</p>
-        <p id="left">In my second year, I was introduced to Machine Learning and I was amazed. I started learning different concepts of Machine Learning such as Pattern Recognition, Computer Vision and Image Processing to name a few. All this curiosity eventually made me into the astonishing research work. I, with a couple of my friends, began developing an optimization algorithm which you can find here.</p>
-        <p style="text-align: center;">And the learning and researching never stopped...</p>
+        <p id="left-main">Hey there! This is Priyank Lohariwal. I am just another 20 year old boy who loves to code. I am the greatest procrastinator you'll ever meet. A messy student who loves to gather information about various technologies present out there. I aspire to be a researcher and a data scientist. Btw, I love binge-watching. You want to know my story? Click <a style="cursor:pointer;text-decoration: underline;" onclick="showStory()">here</a>.</p>
+        <p class="right">The idea of pursuing computer science brewed in my mind when I was 6-yr old. A 10 year old boy who started dreaming of going into a field where he could use the magnificent powers of computers.</p>
+        <p class="left">Got into high school taking science as the main subject having love of physics and maths. But the idea of utlizing computer power didn't just fade away. It made me opt computer science as an optional course.</p>
+        <p class="right">Got into Jadavpur University with Computer Science as majors. And hence began my exploration of the tech world. I started learning new languages and exploring different algorithms as I began my journey.</p>
+        <p class="left">In my second year, I was introduced to Machine Learning and I was amazed. I started learning different concepts of Machine Learning such as Pattern Recognition, Computer Vision and Image Processing to name a few. All this curiosity eventually led me into the astonishing world of research. I, with a couple of my friends, began developing an optimization algorithm which you can find <a href="https://www.degruyter.com/view/journals/jisys/29/1/article-p1598.xml?rskey=KVV1gK&result=1">here</a>.</p>
+        <p id="footNote" style="text-align: center;visibility: hidden;">Consquently, I continued learning and exploring different areas of expertise such as InternetOfThings, Deep Learning, Data Science, Image Analysis. And the learning and researching never stopped...</p>
     </div>
 </div>
