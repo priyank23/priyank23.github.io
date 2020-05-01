@@ -28,7 +28,19 @@ function set_height_width() {
     }
     $('body').height($(window).height());
 }
+
 $(document).ready(function() {
     $(window).bind('resize', set_height_width);
     set_height_width();
 });
+
+document.onkeydown = function(event) {
+    if(event.keyCode == 65) {
+        console.log("about Page Clicked");
+        document.getElementById('about').click();
+    }
+    if(event.keyCode == 66) {
+        console.log("Blog Page Clicked");
+        document.getElementById('blog').click();
+    }
+}
