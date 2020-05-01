@@ -35,12 +35,24 @@ $(document).ready(function() {
 });
 
 document.onkeydown = function(event) {
-    if(event.keyCode == 65) {
+    if(event.keyCode == 65) {   
         console.log("about Page Clicked");
         document.getElementById('about').click();
     }
     if(event.keyCode == 66) {
         console.log("Blog Page Clicked");
         document.getElementById('blog').click();
+    }
+    if(event.keyCode == 67) {
+        console.log("Contact Page Clicked");
+        document.getElementById('Contact').click();
+    }
+    if(event.keyCode == 72) {
+        console.log("Home Page Clicked");
+        window.location.hash = '';
+    }
+    if(event.keyCode == 82) {
+        console.log("Resume Page Clicked");
+        document.getElementById('cv').click();
     }
 }
