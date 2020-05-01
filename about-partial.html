@@ -18,12 +18,7 @@
     }
 }
 .container2 {
-    background: #222222;
-    margin:0;
-    padding:0;
-    border: 0;
-    top:0;
-    bottom: 0;
+    background: black;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -42,12 +37,12 @@
 
 .hr-text:before {
     content: '';
-    background: linear-gradient(to right, transparent, #818078, transparent);
+    background: linear-gradient(to right, transparent, #9b9b9b, transparent);
     position: absolute;
     left: 0;
     top: 50%;
     width: 100%;
-    height: 1px;
+    height: 2px;
 }
 
 .hr-text:after {
@@ -58,7 +53,7 @@
     padding: 0 .5em;
     line-height: 1.5em;
     color: #9b9b9b;
-    background: #222222;
+    background: black;
 }
 
 .container2 p {
@@ -76,7 +71,7 @@
 }
 
 #left-main {
-    float:left; 
+    float:left;
     text-align: left;
     padding:0 40% 0 5%;
 }
@@ -90,22 +85,23 @@
 }
 
 .about-wrapper {
-    margin: 0;
-    height: 80%;
+    border-width: 5px;;
+    border-color: #eeeddd;
+    margin:10px 10px 10px 10px;
+    background-color: #222222;
+    height: 85%;
     overflow-y: auto;
-    padding: 20px;
 }
 
 .about-wrapper::-webkit-scrollbar-track {
-    height: 50%;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
-    background-color: #818078;
+    background-color: #222222;
 }
 
 .about-wrapper::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
     background-color: #222222;
 }
 
@@ -129,7 +125,7 @@ a:hover {
     <h1 style="font-family: 'Euphoria Script';margin:0;"><hr class ="hr-text" data-content="About Me"></h1>
     <div class="about-wrapper">
         <p id="left-main">Hey there! This is Priyank Lohariwal. I am just another 20 year old boy who loves to code. I am the greatest procrastinator you'll ever meet. A messy student who loves to gather information about various technologies present out there. I aspire to be a researcher and a data scientist. Btw, I love binge-watching. You want to know my story? Click <a style="cursor:pointer;text-decoration: underline;" onclick="showStory()">here</a>.</p>
-        <p class="right">The idea of pursuing computer science brewed in my mind when I was 6-yr old. A 10 year old boy who started dreaming of going into a field where he could use the magnificent powers of computers.</p>
+        <p class="right">The idea of pursuing computer science brewed in my mind when I was in sixth grade. A 10 year old boy who started dreaming of going into a field where he could use the magnificent powers of computers.</p>
         <p class="left">Got into high school taking science as the main subject having love of physics and maths. But the idea of utlizing computer power didn't just fade away. It made me opt computer science as an optional course.</p>
         <p class="right">Got into Jadavpur University with Computer Science as majors. And hence began my exploration of the tech world. I started learning new languages and exploring different algorithms as I began my journey.</p>
         <p class="left">In my second year, I was introduced to Machine Learning and I was amazed. I started learning different concepts of Machine Learning such as Pattern Recognition, Computer Vision and Image Processing to name a few. All this curiosity eventually led me into the astonishing world of research. I, with a couple of my friends, began developing an optimization algorithm which you can find <a href="https://www.degruyter.com/view/journals/jisys/29/1/article-p1598.xml?rskey=KVV1gK&result=1">here</a>.</p>
