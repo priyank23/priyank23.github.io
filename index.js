@@ -15,7 +15,7 @@ function set_height_width() {
         elmnt.style.marginRight = RightMargin.toString(10)+"px" ;
     }
 
-    var topPadding = ($(window).height() - 316)/2;
+    var topPadding = (0.8*$(window).height() - 316)/2;
 
     if(topPadding >0) {
         elmnt.style.height = "316px";
@@ -35,23 +35,23 @@ $(document).ready(function() {
 });
 
 document.onkeydown = function(event) {
-    if(event.keyCode == 65) {   
+    if(event.keyCode == 65 && !event.ctrlKey) {   
         console.log("about Page Clicked");
         document.getElementById('about').click();
     }
-    if(event.keyCode == 66) {
+    if(event.keyCode == 66 && !event.ctrlKey) {
         console.log("Blog Page Clicked");
         document.getElementById('blog').click();
     }
-    if(event.keyCode == 67) {
+    if(event.keyCode == 80 && !event.ctrlKey) {
         console.log("Contact Page Clicked");
-        document.getElementById('Contact').click();
+        document.getElementById('Project').click();
     }
-    if(event.keyCode == 72) {
+    if(event.keyCode == 72 && !event.ctrlKey) {
         console.log("Home Page Clicked");
         window.location.hash = '';
     }
-    if(event.keyCode == 82) {
+    if(event.keyCode == 82 && !event.ctrlKey) {
         console.log("Resume Page Clicked");
         document.getElementById('cv').click();
     }

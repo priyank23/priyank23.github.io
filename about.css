@@ -88,6 +88,7 @@
     border-style: solid;
     margin:10px 10px 10px 10px;
     background-color: #222222;
+    background-size: cover;
     height: 85%;
     overflow-y: auto;
 }

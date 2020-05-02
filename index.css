@@ -10,14 +10,34 @@
     }
 }
 
-
 html {
     height: 100%;
     scroll-behavior: smooth;
     overflow: hidden;
 }
 
+.contact-bar {
+    padding: 1% 0;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 100%;
+}
+
+.coll {
+    float: left;
+    margin-left: 20px;
+}
+
+.contact-icons img {
+    float: right;
+    margin-right: 20px;
+}
+.nav-coll {
+    float: left;
+}
 .outer-container {
+    top:0;
     overflow-anchor: none;
     position: relative;
     width: 100%;
@@ -26,9 +46,8 @@ html {
     transition: all 2s;
 }
 .container {
-    display: auto;
+    display: block;
     position: relative;
-    vertical-align: middle;
     padding-top: 20%;
     padding-bottom: 20%;
     transition: all ease 2s;
