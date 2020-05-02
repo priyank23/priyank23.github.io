@@ -25,17 +25,15 @@ html {
 }
 
 .coll {
-    float: left;
-    margin-left: 20px;
+    display: none;
 }
 
-.contact-icons img {
+.contact-bar img {
     float: right;
     margin-right: 20px;
+    transition: all ease 0.2s;
 }
-.nav-coll {
-    float: left;
-}
+
 .outer-container {
     top:0;
     overflow-anchor: none;
@@ -175,4 +173,37 @@ body {
 
 .btn-containers>a:hover::before, a:hover::after {
     top:0;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-bar a {
+        display: none;
+    }
+
+    .contact-bar a.coll {
+        display: block;
+    }
+
+    .contact-bar img:hover{
+        margin-right: 22px;
+        background-color: #111111;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-bar .responsive {
+        transition: all 1s;
+        position: relative;
+    }
+    .contact-bar .responsive .coll {
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    
+    .contact-bar.responsive a {
+        float:none;
+        display: block;
+        position: relative;
+    }
 }

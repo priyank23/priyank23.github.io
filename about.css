@@ -87,6 +87,7 @@
     border-radius: 15px;
     border-style: solid;
     margin:10px 10px 10px 10px;
+    background-image: url('t/texture1-small.jpg');
     background-color: #222222;
     background-size: cover;
     height: 85%;

@@ -56,3 +56,13 @@ document.onkeydown = function(event) {
         document.getElementById('cv').click();
     }
 }
+
+function myFunction() {
+    console.log("width-shortened");
+    var x = document.getElementById("top-bar");
+    if (x.className === "contact-bar") {
+      x.className += " responsive";
+    } else {
+      x.className = "contact-bar";
+    }
+  }
