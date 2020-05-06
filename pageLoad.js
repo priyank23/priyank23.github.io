@@ -21,6 +21,10 @@ function getBlogPage() {
     getPage('./blog-partial.html','blog-Page');
 }
 
+function getProjectPage() {
+    getPage('./projects-partial.html','Project-Page');
+}
+
 function showStory() {
     var leftElement = document.getElementsByClassName('left');
     for(var i=0;i<leftElement.length;i++) {
