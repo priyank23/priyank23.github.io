@@ -34,6 +34,57 @@ $(document).ready(function() {
     set_height_width();
 });
 
+window.onhashchange = function(){
+    var page = window.location.hash;
+    console.log(page.substring(1,page.length-5));
+    if(page== '#' || page == '') {
+        this.homeClicked();
+    }
+    else {
+        document.getElementById(page.substring(1,page.length-5)).click();
+    }
+}
+
+document.getElementById('about').addEventListener("click", function(){
+    var cnts= document.getElementsByClassName('outer-container');
+    for(var i=0;i<cnts.length;i++) {
+        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
+    }
+    document.getElementById('about-Page').style.display = "block";
+});
+
+document.getElementById('blog').addEventListener("click", function(){
+    var cnts= document.getElementsByClassName('outer-container');
+    for(var i=0;i<cnts.length;i++) {
+        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
+    }
+    document.getElementById('blog-Page').style.display = "block";
+});
+
+document.getElementById('Project').addEventListener("click", function(){
+    var cnts= document.getElementsByClassName('outer-container');
+    for(var i=0;i<cnts.length;i++) {
+        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
+    }
+    document.getElementById('Project-Page').style.display = "block";
+});
+
+document.getElementById('CV').addEventListener("click", function(){
+    var cnts= document.getElementsByClassName('outer-container');
+    for(var i=0;i<cnts.length;i++) {
+        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
+    }
+    document.getElementById('CV-Page').style.display = "block";
+});
+
+function homeClicked() {
+    var cnts= document.getElementsByClassName('outer-container');
+    for(var i=0;i<cnts.length;i++) {
+        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
+    }
+    document.getElementById('home').style.display = "block";
+}
+
 document.onkeydown = function(event) {
     if(event.keyCode == 65 && !event.ctrlKey) {   
         console.log("about Page Clicked");
@@ -50,10 +101,11 @@ document.onkeydown = function(event) {
     if(event.keyCode == 72 && !event.ctrlKey) {
         console.log("Home Page Clicked");
         window.location.hash = '';
+        homeClicked();
     }
     if(event.keyCode == 82 && !event.ctrlKey) {
         console.log("Resume Page Clicked");
-        document.getElementById('cv').click();
+        document.getElementById('CV').click();
     }
 }
 

@@ -14,11 +14,11 @@ function getPage(contenturl, id) {
 }
 
 function getAboutPage() {
-    getPage('./about-partial.html','aboutPage');
+    getPage('./about-partial.html','about-Page');
 }
 
 function getBlogPage() {
-    getPage('./blog-partial.html','BlogPage');
+    getPage('./blog-partial.html','blog-Page');
 }
 
 function showStory() {
