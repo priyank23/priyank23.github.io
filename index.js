@@ -45,6 +45,10 @@ window.onhashchange = function(){
     }
 }
 
+window.onload = function() {
+    window.location.hash = '';
+}
+
 document.getElementById('about').addEventListener("click", function(){
     var cnts= document.getElementsByClassName('outer-container');
     for(var i=0;i<cnts.length;i++) {

@@ -82,6 +82,10 @@
     visibility: hidden;
 }
 
+#footNote {
+    padding: 0 5%;
+}
+
 .about-wrapper {
     border-width: 2px;
     border-radius: 15px;
