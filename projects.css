@@ -2,10 +2,22 @@
     vertical-align: middle;
     text-align: left;
     color: #9b9b9b;
-    margin: 5% 5% 20px 5%;
-    height: 90%;
-    border-bottom: 1px #222 solid;
+    padding: 5%;
+    height: 80%;
 }
+
+#footer {
+    padding: 5px 5%;
+    height: 40px;
+    float: right;
+    bottom: 5%;
+}
+
+#footHR {
+    width: 90%;
+    background-color:#222;
+    margin: 0 0 0 5%;
+} 
 
 .container3 h1 {
     margin: 0;

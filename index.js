@@ -73,14 +73,6 @@ document.getElementById('Project').addEventListener("click", function(){
     document.getElementById('Project-Page').style.display = "block";
 });
 
-document.getElementById('CV').addEventListener("click", function(){
-    var cnts= document.getElementsByClassName('outer-container');
-    for(var i=0;i<cnts.length;i++) {
-        if(window.getComputedStyle(cnts[i]).display === 'block') cnts[i].style.display= 'none';
-    }
-    document.getElementById('CV-Page').style.display = "block";
-});
-
 function homeClicked() {
     var cnts= document.getElementsByClassName('outer-container');
     for(var i=0;i<cnts.length;i++) {
