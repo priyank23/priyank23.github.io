@@ -113,4 +113,21 @@ function myFunction() {
     } else {
       x.className = "contact-bar";
     }
-  }
+}
+function openContactBarAbout() {
+    var x = document.getElementById("bottomAbout");
+    if (x.className === "contact-bar") {
+      x.className += " responsive";
+    } else {
+      x.className = "contact-bar";
+    }
+}
+
+function openContactBarProjects() {
+    x = document.getElementById("bottomProjects");
+    if (x.className === "contact-bar") {
+      x.className += " responsive";
+    } else {
+      x.className = "contact-bar";
+    }
+}

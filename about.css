@@ -86,6 +86,20 @@
     padding: 0 5%;
 }
 
+#footHRabout {
+    width: calc(100%-20px);
+    background-color:#222;
+    margin: 5px 10px;
+}
+
+#footerAbout {
+    padding: 5px 10px;
+    height: 40px;
+    float: right;
+    bottom: 20px;
+    width: 70%;
+}
+
 .about-wrapper {
     border-width: 2px;
     border-radius: 15px;
@@ -94,7 +108,7 @@
     background-image: url('t/texture1-small.jpg');
     background-color: #222222;
     background-size: cover;
-    height: 85%;
+    height: 75%;
     overflow-y: auto;
 }
 
