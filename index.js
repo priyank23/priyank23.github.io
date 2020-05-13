@@ -131,3 +131,7 @@ function openContactBarProjects() {
       x.className = "contact-bar";
     }
 }
+
+function backClicked() {
+    window.history.back();
+}

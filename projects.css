@@ -2,12 +2,13 @@
     vertical-align: middle;
     text-align: left;
     color: #9b9b9b;
-    padding: 5%;
-    height: 85%;
+    padding: 5vh 3vw 1vh 3vw;
+    min-height: 87vh;
+    max-height: 87vh;
 }
 
 #footer {
-    padding: 5px 5% 5px 0;
+    padding: 0 calc(3vw - 15px);
     height: 40px;
     float: right;
     bottom: 5%;
@@ -15,9 +16,9 @@
 }
 
 #footHR {
-    width: 90%;
+    width: 94vw;
     background-color:#aaa;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 3vw;
 } 
 
 .container3 h1 {
