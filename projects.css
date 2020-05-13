@@ -16,12 +16,13 @@
 
 #footHR {
     width: 90%;
-    background-color:#222;
+    background-color:#aaa;
     margin: 0 0 0 5%;
 } 
 
 .container3 h1 {
     margin: 0;
+    color: #ccc;
 }
 
 .container3 hr {
@@ -37,14 +38,16 @@
 }
 
 #title{
+    background-color: #222222;
     margin: 10px 0 0 0;
     height: auto;
     font-size: 1.5em;
     padding: 2%;
     border-style: solid;
     border-width: 0 0 0 5px;
+    border-radius: 0 10px 0 0;
     border-color: cadetblue;
-    transition: all ease 0.5s;
+    transition: all ease 0.3s;
 }
 
 #title:hover {
@@ -53,6 +56,7 @@
 }
 
 #desc {
+    border-radius: 0 0 10px 0;
     font-size: 1.2em;
     padding: 2%;
     margin: 0;

@@ -36,6 +36,7 @@ html {
 
 .outer-container {
     top:0;
+    z-index: 0;
     overflow-anchor: none;
     position: absolute;
     width: 100%;
@@ -47,6 +48,8 @@ html {
 #home {
     display: block;
     transition: all linear 2s;
+    background-color: rgba(46, 46, 46, 0.3);
+    background-image: linear-gradient(140deg,rgba(46, 46, 46, 0.3) 20%, rgba(0, 0, 0, 0.9));
 }
 
 #about-Page {
@@ -59,7 +62,8 @@ html {
 
 #Project-Page {
     display: none;
-    background: black;
+    background-color: rgba(46, 46, 46, 0.3);
+    background-image: linear-gradient(140deg,rgba(46, 46, 46, 0.3) 20%, rgba(0, 0, 0, 0.8));
 }
 
 #CV-Page {
@@ -121,24 +125,23 @@ hr {
 
 @media only screen and (max-width: 639px) {
     body {
-        background-image: url('./img/cover7-small.jpg');
+        background-image: url('./img/cover3-small.jpg');
     }
 }
 
 @media only screen and (max-width: 1919px) {
     body {
-        background-image: url('./img/cover7-medium.jpg');
+        background-image: url('./img/cover3-small.jpg');
     }
 }
 
 body {
-    background-image: url('./img/cover7.jpg');
+    background: url('./img/cover3.jpg') center center fixed no-repeat #666666;
+    z-index: 2000;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
     padding: 0;
     margin: 0;
     max-height: 100%;
