@@ -1,9 +1,17 @@
+#blog-Page>h1 {
+    margin: 10px 0 0 0;
+    color: #ccc;
+}
+
 .post-container {
+    border: 2px #232323 solid;
     display: grid;
     background: transparent;
-    height: 80vh;
+    max-height: 80vh;
+    margin: 10px 5vw;
     width: 90vw;
     grid-template-columns: auto auto;
+    overflow-y: auto;
 }
 
 .post {
@@ -25,4 +33,22 @@
     color: #f0f0f0;
     letter-spacing: .1em;
     padding: 3%;
+}
+
+.post-container::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+#footHRblog {
+    width: 90vw;
+    background-color:#f0f0f0;
+    margin: 0 0 0 5vw;
+}
+
+#footer-blog {
+    padding: 0 calc(5vw - 15px);
+    height: 40px;
+    float: right;
+    bottom: 5%;
+    width: 40%;
 }
