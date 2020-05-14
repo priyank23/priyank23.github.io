@@ -31,6 +31,8 @@ html {
 .contact-bar img {
     float: right;
     margin-right: 15px;
+    height: 20px;
+    width: 20px;
     transition: all ease 0.2s;
 }
 
@@ -42,7 +44,7 @@ html {
     width: 100%;
     min-height: 100vh;
     color: #fff;
-    animation: transitionIn 2.5s;
+    animation: transitionIn 1s;
 }
 
 #home {

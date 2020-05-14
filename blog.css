@@ -1,0 +1,28 @@
+.post-container {
+    display: grid;
+    background: transparent;
+    height: 80vh;
+    width: 90vw;
+    grid-template-columns: auto auto;
+}
+
+.post {
+    margin: 2.5vw;
+    width: 40vw;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.8) ;
+    height: 25vh;
+    color: white;
+    transition: all ease .3s;
+}
+
+.post:hover {
+    box-shadow: 0 0 3px #aaaa;
+}
+
+.post-content {
+    float: left;
+    color: #f0f0f0;
+    letter-spacing: .1em;
+    padding: 3%;
+}
