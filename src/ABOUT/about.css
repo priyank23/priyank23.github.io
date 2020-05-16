@@ -1,0 +1,146 @@
+@keyframes transitionLeft {
+    from {
+        padding: 0 5% 0 40%;
+    }
+    to {
+        padding: 0 40% 0 5%;
+    }
+}
+
+@keyframes transitionRight {
+    from {
+        padding: 0 40% 0 5%;
+    }
+    to {
+        padding: 0 5% 0 40%;
+    }
+}
+.container2 {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    background: transparent;
+}
+
+.hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #9b9b9b, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #9b9b9b;
+    background: black;
+}
+
+.container2 p {
+    color: #eeeddd;
+    letter-spacing:.1em;
+    font-family: 'Cherry Swash','Brawler';
+}
+
+.left {
+    float:left; 
+    display: none;
+    text-align: left;
+    padding:0 40% 0 5%;
+    visibility: hidden;
+}
+
+#left-main {
+    float:left;
+    text-align: left;
+    padding:0 40% 0 5%;
+}
+
+.right {
+    float: right;
+    display: none;
+    text-align: right;
+    padding: 0 5% 0 40%;
+    visibility: hidden;
+}
+
+#footNote {
+    padding: 0 5%;
+}
+
+#footHRabout {
+    width: calc(100%-20px);
+    background-color:#222;
+    margin: 5px 10px 0px 10px;
+}
+
+#bottomAbout {
+    padding: 5px;
+}
+
+#footerAbout {
+    padding: 0;
+    height: 35px;
+    float: right;
+    width: 70%;
+}
+
+.about-wrapper {
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    margin:10px 10px 10px 10px;
+    background-image: url('../../img/texture.jpg');
+    background-color: #222222;
+    background-size: cover;
+    height: 78vh;
+    overflow-y: auto;
+}
+
+.about-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #222222;
+    visibility: hidden;
+}
+
+.about-wrapper::-webkit-scrollbar {
+    width: 5px;
+    background-color: #222222;
+    visibility: hidden;
+}
+
+.about-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #555;
+    visibility: hidden;
+}
+
+a {
+    color: #9b9b9b;
+}
+
+a:hover {
+    color: #555;
+}

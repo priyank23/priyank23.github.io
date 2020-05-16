@@ -1,0 +1,77 @@
+.container3 {
+    vertical-align: middle;
+    text-align: left;
+    color: #9b9b9b;
+    padding: 5vh 3vw 1vh 3vw;
+    min-height: 87vh;
+    max-height: 87vh;
+}
+
+#footer {
+    padding: 0 calc(3vw - 15px);
+    height: 40px;
+    float: right;
+    bottom: 5%;
+    width: 70%;
+}
+
+#footHR {
+    width: 94vw;
+    background-color:#aaa;
+    margin: 0 0 0 3vw;
+} 
+
+.container3 h1 {
+    margin: 0;
+    color: #ccc;
+}
+
+.container3 hr {
+    background: linear-gradient(to left, transparent, #9b9b9b);
+}
+
+.content {
+    overflow-y: auto;
+}
+
+.content hr {
+    margin: 30px 0 0 0;
+}
+
+#title{
+    background-color: #222222;
+    margin: 10px 0 0 0;
+    height: auto;
+    font-size: 1.5em;
+    padding: 2%;
+    border-style: solid;
+    border-width: 0 0 0 5px;
+    border-radius: 0 10px 0 0;
+    border-color: cadetblue;
+    transition: all ease 0.3s;
+}
+
+#title:hover {
+    color: #ccc;
+    border-width: 0 0 0 10px;
+}
+
+#desc {
+    border-radius: 0 0 10px 0;
+    font-size: 1.2em;
+    padding: 2%;
+    margin: 0;
+    top:0;
+    border: none;
+    background-color: #111111;
+    transition: all ease 0.5s;
+}
+
+#desc:hover {
+    color: #ccc;
+}
+
+#desc a {
+    color:#555;
+    text-decoration:none
+}
