@@ -78,9 +78,9 @@
     margin: 2.5vh 2.5vw;
     width: 0;
     border-radius: 10px;
-    background-color: rgba(46, 46, 46, 0.8) ;
-    min-height: 75vh;
-    height: auto;
+    background-color: rgba(46, 46, 46, 0.8);
+    min-height: 70vh;
+    height: fit-content;
     color: white;
     transition: all ease 1s;
 }
