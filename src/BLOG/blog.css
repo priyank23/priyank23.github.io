@@ -1,3 +1,12 @@
+@keyframes slideLeft {
+    from {
+        width:0;
+    }
+    to {
+        width: 40vw;
+    }
+}
+
 #blog-Page>h1 {
     margin: 10px 0 0 0;
     color: #ccc;
@@ -5,23 +14,25 @@
 
 .post-container {
     border: 2px #232323 solid;
-    display: block;
+    display: flex;
     background: transparent;
     max-height: 80vh;
     margin: 10px 5vw;
     width: 90vw;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .post {
-    margin: 2.5vw;
+    margin: 2.5vh 2.5vw;
     width: 40vw;
     border-radius: 10px;
     background-color: rgba(46, 46, 46, 0.8) ;
     min-height: 25vh;
     height: auto;
     color: white;
-    transition: all ease .3s;
+    transition: all ease 1s;
+    animation: slideLeft 1s;
 }
 
 .posts {
@@ -30,6 +41,7 @@
 }
 
 .post:hover {
+    cursor: pointer;
     box-shadow: 0 0 3px #aaaa;
 }
 
@@ -62,6 +74,17 @@
     visibility: hidden;
 }
 
+.post-body {
+    margin: 2.5vh 2.5vw;
+    width: 0;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.8) ;
+    min-height: 75vh;
+    height: auto;
+    color: white;
+    transition: all ease 1s;
+}
+
 #footHRblog {
     width: 90vw;
     background-color:#f0f0f0;
@@ -77,6 +100,14 @@
 }
 
 @media only screen and (max-width: 700px)  {
+    @keyframes slideLeft {
+        from {
+            width: 0;
+        }
+        to {
+            width: 85vw;
+        }
+    }
     .post {
         width: 85vw;
     }

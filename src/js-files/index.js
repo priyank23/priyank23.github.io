@@ -1,3 +1,4 @@
+//for setting the height of the page on resize and setting the dimensions of my profile container in home page 
 function set_height_width() { 
     
     var elmnt = document.getElementsByClassName("container")[0];
@@ -34,9 +35,9 @@ $(document).ready(function() {
     set_height_width();
 });
 
+// for navigating pages based on the url
 window.onhashchange = function(){
     var page = window.location.hash;
-    console.log(page.substring(1,page.length-5));
     if(page== '#' || page == '') {
         this.homeClicked();
     }
@@ -49,6 +50,7 @@ window.onload = function() {
     window.location.hash = '';
 }
 
+// navigating the pages based on the button click event in home page
 document.getElementById('about').addEventListener("click", function(){
     var cnts= document.getElementsByClassName('outer-container');
     for(var i=0;i<cnts.length;i++) {
@@ -81,6 +83,12 @@ function homeClicked() {
     document.getElementById('home').style.display = "block";
 }
 
+// binding keyboard button presses with navigation buttons in home page
+// H -> Home Page
+// A -> About Page
+// B -> Blogs Page
+// P -> Projects Page
+// R -> Resume Page
 document.onkeydown = function(event) {
     if(event.keyCode == 65 && !event.ctrlKey) {   
         console.log("about Page Clicked");
@@ -105,7 +113,8 @@ document.onkeydown = function(event) {
     }
 }
 
-function myFunction() {
+// opening contact bars in different pages
+function openContactBar() {
     console.log("width-shortened");
     var x = document.getElementById("top-bar");
     if (x.className === "contact-bar") {
@@ -141,6 +150,7 @@ function openContactBarBlogs() {
     }
 }
 
+// function when back button in different pages is clicked
 function backClicked() {
     window.history.back();
 }

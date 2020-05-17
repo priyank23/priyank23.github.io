@@ -1,3 +1,4 @@
+// Initialising server request for getting html pages
 function getPage(contenturl, id) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', contenturl, true);
@@ -25,6 +26,7 @@ function getProjectPage() {
     getPage('./src/PROJECTS/projects-partial.html','Project-Page');
 }
 
+// for showing MyStory paragraphs in about page
 function showStory() {
     var leftElement = document.getElementsByClassName('left');
     for(var i=0;i<leftElement.length;i++) {
@@ -58,4 +60,24 @@ function showStory() {
 
     if(window.getComputedStyle(footNote).visibility === "hidden") footNote.style.visibility='visible';
     else footNote.style.visibility = 'hidden';
+}
+
+// for getting post page from src/Blog-posts/ 
+function getBlogPost(postNo) {
+    getPage('./src/Blog-posts/'+postNo+'.html',"pBody");
+}
+
+// the onclick event function of post snippet in blogs page
+function postRequest(postNo, bool) {
+    if(postNo !== '') getBlogPost(postNo);
+    var postPanel = document.getElementsByClassName("posts")[0];
+    var postBody = document.getElementById("pBody");
+    if(!bool) {
+        postPanel.style.display = "grid";
+        postBody.style.width = "0";
+    }
+    else {
+        postPanel.style.display = "none";
+        postBody.style.width = "90vw";
+    }
 }
