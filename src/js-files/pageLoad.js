@@ -70,6 +70,7 @@ function getBlogPost(postNo) {
 // the onclick event function of post snippet in blogs page
 function postRequest(postNo, bool) {
     if(postNo !== '') getBlogPost(postNo);
+    else document.getElementById('pBody').innerHTML = '';
     var postPanel = document.getElementsByClassName("posts")[0];
     var postBody = document.getElementById("pBody");
     if(!bool) {
