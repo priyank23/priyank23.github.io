@@ -115,7 +115,6 @@ document.onkeydown = function(event) {
 
 // opening contact bars in different pages
 function openContactBar() {
-    console.log("width-shortened");
     var x = document.getElementById("top-bar");
     if (x.className === "contact-bar") {
       x.className += " responsive";
@@ -154,3 +153,7 @@ function openContactBarBlogs() {
 function backClicked() {
     window.history.back();
 }
+
+$(".rotate").click(function() {
+    $(this).toggleClass("up");
+})

@@ -83,10 +83,10 @@ html {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
-    transition: all ease 2s;
+    transition: all ease 1s;
     width: 500px;
     height: 316px;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
     animation: transitionIn 2s;
 }
 
@@ -209,7 +209,27 @@ body {
     top:0;
 }
 
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.up {
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+
+#k {
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
+    #k {
+        display: none;
+    }
+
     .contact-bar>#contacts {
         display: none;
     }
@@ -228,9 +248,8 @@ body {
         position: absolute;
         right:0;
         top:0;
-        transform: rotate(180deg);
     }
-    
+
     .contact-bar.responsive>#contacts {
         float:none;
         display: block;
