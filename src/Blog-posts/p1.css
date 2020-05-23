@@ -20,6 +20,11 @@
     min-height: 57vh;
 }
 
+.gen-body p {
+    font-family: 'Dancing Script';
+    font-size: 1.2em;
+}
+
 .sub-header {
     padding: 10px 0 0 0;
     font-size: 1.5em;
@@ -37,11 +42,4 @@
 #post-foot {
     margin-bottom: 5px;
     background-color: rgb(61, 61, 61);
-}
-
-#body-foot {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
-    float: right;
-    color: #9b9b9b;
 }
