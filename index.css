@@ -36,6 +36,12 @@ html {
     transition: all ease 0.2s;
 }
 
+#contacts {
+    animation-delay: 1s;
+    animation: transitionIn 0.75s;
+    position: relative;
+}
+
 .outer-container {
     top:0;
     z-index: 0;
@@ -49,7 +55,7 @@ html {
 
 #home {
     display: block;
-    transition: all linear 2s;
+    transition: all linear 1s;
     background-color: rgba(46, 46, 46, 0.3);
     background-image: linear-gradient(140deg,rgba(46, 46, 46, 0.3) 20%, rgba(0, 0, 0, 0.9));
 }
@@ -204,22 +210,17 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .contact-bar a {
+    .contact-bar>#contacts {
         display: none;
     }
 
     .contact-bar a.coll{
         display: block;
     }
-
-    .contact-bar .coll img:hover{
-        margin-right: 17px;
-        background-color: #111111;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    .contact-bar .responsive {
+    .contact-bar .responsive{
         transition: all 1s;
         position: relative;
     }
@@ -227,11 +228,11 @@ body {
         position: absolute;
         right:0;
         top:0;
+        transform: rotate(180deg);
     }
     
-    .contact-bar.responsive a {
+    .contact-bar.responsive>#contacts {
         float:none;
         display: block;
-        position: relative;
     }
 }
